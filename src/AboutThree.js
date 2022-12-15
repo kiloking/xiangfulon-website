@@ -33,7 +33,7 @@ function AboutThree() {
       </div>
       <div 
         className='w-1/2 h-screen bg-center bg-no-repeat'
-        style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/about/aboutbg-2.png' })`}}
+        style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/about/aboutbg-3.png' })`}}
       ></div>
     </div>
   )
