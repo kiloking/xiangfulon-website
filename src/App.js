@@ -5,6 +5,11 @@ import Home from './Home';
 import AboutOne from './AboutOne';
 import AboutTwo from './AboutTwo';
 import AboutThree from './AboutThree';
+import WorkOne from './WorkOne';
+import WorkTwo from './WorkTwo';
+import NewsOne from './NewsOne';
+import NewsTwo from './NewsTwo';
+import Contact from './Contact';
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +19,11 @@ function App() {
           <Route path="about-1" element={<AboutOne />} />
           <Route path="about-2" element={<AboutTwo />} />
           <Route path="about-3" element={<AboutThree />} />
+          <Route path="work-1" element={<WorkOne />} />
+          <Route path="work-2" element={<WorkTwo />} />
+          <Route path="news-1" element={<NewsOne />} />
+          <Route path="news-2" element={<NewsTwo />} />
+          <Route path="contact" element={<Contact />} />
         
         </Route>
       </Routes>

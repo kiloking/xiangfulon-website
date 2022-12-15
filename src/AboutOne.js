@@ -3,7 +3,7 @@ import { MenuItems01} from './Components/ＭenuItems'
 function AboutOne() {
   return (
     <div 
-      className='w-full flex justify-between items-center'
+      className='w-full flex justify-between items-center '
     >
       <div 
         className='w-1/2 h-screen px-10 py-16'
