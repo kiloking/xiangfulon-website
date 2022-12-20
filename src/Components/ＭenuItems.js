@@ -30,12 +30,12 @@ export const MenuItems02 = [
 export const MenuItems03 = [
   {
     title: '即將公開',
-    path: '/new-1',
+    path: '/news-1',
     cName: 'dropdown-link'
   },
   {
     title: '未來計畫',
-    path: '/new-2',
+    path: '/news-2',
     cName: 'dropdown-link'
   }
 ];

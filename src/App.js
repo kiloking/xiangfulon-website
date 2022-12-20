@@ -10,6 +10,8 @@ import WorkTwo from './WorkTwo';
 import NewsOne from './NewsOne';
 import NewsTwo from './NewsTwo';
 import Contact from './Contact';
+import WatchOldProject from './WatchOldProject';
+import WatchArticle from './WatchArticle';
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +26,8 @@ function App() {
           <Route path="news-1" element={<NewsOne />} />
           <Route path="news-2" element={<NewsTwo />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="watchproject/:projectid" element={<WatchOldProject />} />
+          <Route path="watcharticle/:articleid" element={<WatchArticle />} />
         
         </Route>
       </Routes>

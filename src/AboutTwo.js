@@ -1,5 +1,5 @@
 import React from 'react'
-import { MenuItems01} from './Components/ＭenuItems'
+import MenuOne from './Components/MenuOne'
 function AboutTwo() {
   return (
     <div 
@@ -9,16 +9,7 @@ function AboutTwo() {
         className='w-1/2 h-screen px-10 py-16'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blockbg.png' })`}}
       >
-        <div className='py-12'>
-          <ul className='flex gap-6'>
-            {MenuItems01.map((item,index)=>{
-              return(
-                <li>{item.title}</li>
-              )
-            })}
-            
-          </ul>
-        </div>
+        <MenuOne />
         <div className='text-[#012c48] text-xl font-bold py-6'>一座會思考的建築</div>
         <div className=' leading-10'>
           建築就像一本打開的書， <br /> 

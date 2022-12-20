@@ -3,6 +3,7 @@ export const oldProjects = [
     title:"城市之光",
     project_code:"project01",
     cover_image:"project01.png",
+    year_cover_image:"year_pro01.png",
     address:"新北市三重區三信路180號",
     land_size:"289.34坪",
     house_size:"37.45-38.2坪",
@@ -11,12 +12,14 @@ export const oldProjects = [
     build_design:"林豐祥事務所",
     build_create:"李清田",
     build_openspace:"",
-    open_date:"2007年"
+    open_year:"2007"
+    
   },
   {
     title:"城市遠見",
     project_code:"project02",
     cover_image:"project02.png",
+    year_cover_image:"year_pro02.png",
     address:"新北市三重區集智街8號",
     land_size:"300.25坪",
     house_size:"30.44-51.74坪",
@@ -25,12 +28,13 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_date:"2009年"
+    open_year:"2009"
   },
   {
     title:"集英堡一期",
     project_code:"project03",
     cover_image:"project03.png",
+    year_cover_image:"year_pro03.png",
     address:"新北市三重區三德街30號",
     land_size:"550.69坪",
     house_size:"30.51-83.24坪",
@@ -39,12 +43,13 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_date:"2007年"
+    open_year:"2007"
   },
   {
     title:"集英堡二期",
     project_code:"project04",
     cover_image:"project04.png",
+    year_cover_image:"year_pro04.png",
     address:"新北市三重區集智街8號",
     land_size:"566.24坪",
     house_size:"28.91-37.62坪",
@@ -53,12 +58,13 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_date:"2008年"
+    open_year:"2008"
   },
   {
     title:"集英堡三期",
     project_code:"project05",
     cover_image:"project05.png",
+    year_cover_image:"year_pro05.png",
     address:"新北市三重區集仁街158號",
     land_size:"901.60坪",
     house_size:"37-67坪",
@@ -67,12 +73,13 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_date:"2011年"
+    open_year:"2011"
   },
   {
     title:"集英堡五期",
     project_code:"project06",
     cover_image:"project06.png",
+    year_cover_image:"year_pro06.png",
     address:"新北市三重區吉祥街68號",
     land_size:"243.89坪",
     house_size:"42~70坪",
@@ -81,12 +88,13 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_date:"2013年"
+    open_year:"2013"
   },
   {
     title:"集英堡六期",
     project_code:"project07",
     cover_image:"project07.png",
+    year_cover_image:"year_pro07.png",
     address:"新北市三重區集英路17號",
     land_size:"442.88坪",
     house_size:"42.59-66.72坪",
@@ -95,12 +103,13 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_date:"2014年"
+    open_year:"2014"
   },
   {
     title:"集英富琚",
     project_code:"project08",
     cover_image:"project08.png",
+    year_cover_image:"year_pro08.png",
     address:"新北市三重區集賢路189號",
     land_size:"478.33坪",
     house_size:"34-48坪",
@@ -109,20 +118,21 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
-    open_date:"2022年",
+    open_year:"2022",
     albums:[
-      {images:"p01.png"},
-      {images:"p02.png"},
-      {images:"p03.png"},
-      {images:"p04.png"},
-      {images:"p05.png"},
-      {images:"p06.png"}
+      "08/p01.png",
+      "08/p02.png",
+      "08/p03.png",
+      "08/p04.png",
+      "08/p05.png",
+      "08/p06.png"
     ]
   },
   {
     title:"喜福匯No1",
     project_code:"project09",
     cover_image:"project09.png",
+    year_cover_image:"year_pro09.png",
     address:"新北市蘆洲區長樂路166號",
     land_size:"318.50坪",
     house_size:"30.15-59.82坪",
@@ -131,12 +141,13 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
-    open_date:"2017年"
+    open_year:"2017"
   },
   {
     title:"喜福匯No2",
     project_code:"project10",
     cover_image:"project10.png",
+    year_cover_image:"year_pro10.png",
     address:"新北市蘆洲區三民路501號",
     land_size:"254.24坪",
     house_size:"28.11-52.14坪",
@@ -145,12 +156,13 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
-    open_date:"2017年"
+    open_year:"2017"
   },
   {
     title:"喜福匯No3",
     project_code:"project11",
     cover_image:"project11.png",
+    year_cover_image:"year_pro11.png",
     address:"新北市蘆洲區仁愛街90號",
     land_size:"229.30坪",
     house_size:"25.81-55.77坪",
@@ -159,17 +171,18 @@ export const oldProjects = [
     build_design:"陳朱平建築師事務所",
     build_create:"全國營造股份有限公司",
     build_openspace:"映荷空間設計",
-    open_date:"2017年",
+    open_year:"2017",
     albums:[
-      {images:"p01.png"},
-      {images:"p02.png"},
-      {images:"p03.png"}
+      "11/p01.png",
+      "11/p02.png",
+      "11/p03.png"
     ]
   },
   {
     title:"喜福匯No5",
     project_code:"project12",
     cover_image:"project12.png",
+    year_cover_image:"year_pro12.png",
     address:"新北市三重區成功一街31號",
     land_size:"488.36坪",
     house_size:"22.36-47.17坪",
@@ -178,15 +191,50 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
-    open_date:"2020年",
+    open_year:"2020",
     albums:[
-      {images:"p01.png"},
-      {images:"p02.png"},
-      {images:"p03.png"},
-      {images:"p04.png"},
-      {images:"p05.png"},
-      {images:"p06.png"},
-      {images:"p07.png"}
+      "12/p01.png",
+      "12/p02.png",
+      "12/p03.png",
+      "12/p04.png",
+      "12/p05.png",
+      "12/p06.png",
+      "12/p07.png"
     ]
+  }
+]
+
+export const newProjects = [
+  {
+    title:"新莊頭前重劃區",
+    project_code:"new_work01",
+    images:['new_work01_1.png','new_work01_2.png'],
+    map_image:"new_work01_map.png",
+    address:"新北市新莊區福美街",
+    land_size:"609.92坪",
+    house_size:"19-34坪",
+    build_floor:"13F+B4F",
+    build_count:"91戶+100車",
+    build_design:"吳非士建築師事務所",
+    build_create:"全國營造股份有限公司",
+    build_openspace:"澄統綠建築設計、境業設計工程公司(陳志宏建築師事務所)",
+    build_env:"境業設計工程公司",
+    start_date:"111-10-25",    
+  },
+  {
+    title:"蘆洲捷運站",
+    project_code:"new_work02",
+    images:['new_work02_1.png','new_work02_2.png'],
+    map_image:"new_work02_map.png",
+    address:"新北市藍洲區三民",
+    land_size:"492.80坪",
+    house_size:"25-39坪",
+    build_floor:"14F+B3F",
+    build_count:"58戶+72車",
+    build_design:"吳非士建築師事務所",
+    build_create:"全國營造股份有限公司",
+    build_openspace:"",
+    build_env:"",
+    start_date:"111-10-27",    
   }
 ]

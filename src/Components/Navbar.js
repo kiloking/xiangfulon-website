@@ -67,7 +67,7 @@ function Navbar() {
         </li>
         <div className='text-[#AE121F] mx-5'>/</div>
         <li className=" hover:text-[#AE121F] transition group relative px-6 py-5">
-          <Link>聯絡我們</Link>
+          <Link to="/contact">聯絡我們</Link>
         </li>
       </ul>
     </div>

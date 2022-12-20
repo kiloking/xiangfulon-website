@@ -1,5 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link  } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -37,15 +38,16 @@ function SwipeWorkItems({data}) {
           data.map((item,index)=>{
             return(
               <SwiperSlide key={'a0'+index}>
-                <div 
+                <Link 
+                  to={"/watchproject/"+item.project_code}
                   className={'flex flex-col justify-start items-start pb-14 transition-all duration-1000 w-full'} 
-                  >
+                >
                   <div className='border p-3 shadow min-w-[220px] w-full'>
                     <div className='w-full'><img src={process.env.PUBLIC_URL+'/images/oldworks/'+ item.cover_image} alt="" className='w-full' /></div>
                     <div className='text-xsm font-normal text-zinc-500 mt-3 mb-3'>{item.title}</div>
                   </div>
 
-                </div>
+                </Link>
               </SwiperSlide>
             )
           })
