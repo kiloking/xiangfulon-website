@@ -23,7 +23,7 @@ function WatchOldProject() {
       {data ?
         <div className='px-10 py-14 flex gap-6 '>
           <div className='w-1/3'>
-            <img src={process.env.PUBLIC_URL+"../images/oldworks/"+ data.project_code+'@3x.png'} alt="" className='max-w-full'/>
+            <img src={process.env.PUBLIC_URL+"/images/oldworks/"+ data.project_code+'@3x.png'} alt="" className='max-w-full'/>
           </div>
           <ul className='w-1/2 leading-8 text-zinc-800 mt-10'>
             {data.title            && <div className='text-2xl text-[#003049] font-bold mb-4'>{data.title}</div> }
@@ -40,7 +40,7 @@ function WatchOldProject() {
           </ul>
           <div className='w-1/2'>
             {
-              data.albums && <div><img src={process.env.PUBLIC_URL+'../images/oldworks/album/'+data.albums[currentIndex]} alt="" /></div>
+              data.albums && <div><img src={process.env.PUBLIC_URL+'/images/oldworks/album/'+data.albums[currentIndex]} alt="" /></div>
             }
             {
              data.albums &&  <ul className='box-border mt-7 gap-1  grid grid-cols-4'>
@@ -52,7 +52,7 @@ function WatchOldProject() {
                       className={'hover:brightness-100 cursor-pointer transition-all' + (index === currentIndex ? ' brightness-100' : ' brightness-50')}
                       onClick={()=>(setCurrentIndex(index))}
                     >
-                      <img src={process.env.PUBLIC_URL+'../images/oldworks/album/'+item}alt="" />
+                      <img src={process.env.PUBLIC_URL+'/images/oldworks/album/'+item}alt="" />
                     </li>
                   )
                 })
