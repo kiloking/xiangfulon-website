@@ -13,6 +13,7 @@ import Contact from './Contact';
 import WatchOldProject from './WatchOldProject';
 import WatchArticle from './WatchArticle';
 function App() {
+  console.log(process.env.NODE_ENV)
   return (
     <BrowserRouter>
       <Routes> 
