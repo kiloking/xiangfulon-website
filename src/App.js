@@ -26,8 +26,8 @@ function App() {
           <Route path="news-1" element={<NewsOne />} />
           <Route path="news-2" element={<NewsTwo />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="watchproject/:projectid" element={<WatchOldProject />} />
-          <Route path="watcharticle/:articleid" element={<WatchArticle />} />
+          <Route path="/watchproject/:projectid" element={<WatchOldProject />} />
+          <Route path="/watcharticle/:articleid" element={<WatchArticle />} />
         
         </Route>
       </Routes>
