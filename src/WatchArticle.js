@@ -8,6 +8,7 @@ function WatchArticle() {
   const [currentIndex, setCurrentIndex] = useState(0) 
   const currentEnv = process.env.NODE_ENV
   // development  production
+  const PUBLICURL = currentEnv === 'development' ?  process.env.PUBLIC_URL : '..'
   useEffect(()=>{
     const currentData = news.find((item)=>{
       return item.id === articleid
@@ -16,7 +17,7 @@ function WatchArticle() {
   })
   return (
     <div className='w-full h-screen bg-cover bg-center bg-no-repeat '
-      style={{backgroundImage: `url(${currentEnv === 'development' ? process.env.PUBLIC_URL+'/images/blockbg.png' : '../images/blockbg.png' })`}}
+      style={{backgroundImage: `url(${PUBLICURL+'/images/blockbg.png'})`}}
     >
       <div className='px-10 pt-20 '>
         <Link to="/news-2"><FaArrowLeft size="36px" color="black"/></Link>
@@ -42,7 +43,7 @@ function WatchArticle() {
             </div>
           </div>
           <div className='w-1/2'>
-            <img src={currentEnv === 'development' ? process.env.PUBLIC_URL+'/images/news/'+data.article_image  : '../images/news/'+data.article_image} alt=""  className='max-w-full' />
+            <img src={PUBLICURL+'/images/news/'+data.article_image } alt=""  className='max-w-full' />
             <div>{data.source}</div>
           </div>
         </div>

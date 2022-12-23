@@ -8,6 +8,7 @@ function WatchOldProject() {
   const [currentIndex, setCurrentIndex] = useState(0) 
   const currentEnv = process.env.NODE_ENV
   // development  production
+  const PUBLICURL = currentEnv === 'development' ?  process.env.PUBLIC_URL : '..'
   useEffect(()=>{
     const currentData = oldProjects.find((item)=>{
       return item.project_code === projectid
@@ -16,7 +17,7 @@ function WatchOldProject() {
   })
   return (
     <div className='w-full h-screen bg-cover bg-center bg-no-repeat '
-      style={{backgroundImage: `url(${currentEnv === 'development' ? process.env.PUBLIC_URL + '/images/blockbg.png' : '../images/blockbg.png' })`}}
+      style={{backgroundImage: `url(${PUBLICURL + '/images/blockbg.png' })`}}
     >
       <div className='px-10 pt-20 '>
         <Link to="/work-1"><FaArrowLeft size="36px" color="black"/></Link>
@@ -24,7 +25,7 @@ function WatchOldProject() {
       {data ?
         <div className='px-10 py-14 flex gap-6 '>
           <div className='w-1/3'>
-            <img src={currentEnv === 'development' ? process.env.PUBLIC_URL+"/images/oldworks/"+ data.project_code+'@3x.png' :"../images/oldworks/"+ data.project_code+'@3x.png'} alt="" className='max-w-full'/>
+            <img src={PUBLICURL+"/images/oldworks/"+ data.project_code+'@3x.png' } alt="" className='max-w-full'/>
           </div>
           <ul className='w-1/2 leading-8 text-zinc-800 mt-10'>
             {data.title            && <div className='text-2xl text-[#003049] font-bold mb-4'>{data.title}</div> }
@@ -41,7 +42,7 @@ function WatchOldProject() {
           </ul>
           <div className='w-1/2'>
             {
-              data.albums && <div><img src={currentEnv === 'development' ? process.env.PUBLIC_URL+'/images/oldworks/album/'+data.albums[currentIndex] :'../images/oldworks/album/'+data.albums[currentIndex]} alt="" /></div>
+              data.albums && <div><img src={PUBLICURL+'/images/oldworks/album/'+data.albums[currentIndex] } alt="" /></div>
             }
             {
              data.albums &&  <ul className='box-border mt-7 gap-1  grid grid-cols-4'>
@@ -53,7 +54,7 @@ function WatchOldProject() {
                       className={'hover:brightness-100 cursor-pointer transition-all' + (index === currentIndex ? ' brightness-100' : ' brightness-50')}
                       onClick={()=>(setCurrentIndex(index))}
                     >
-                      <img src={currentEnv === 'development' ? process.env.PUBLIC_URL+'/images/oldworks/album/'+item :'../images/oldworks/album/'+item}alt="" />
+                      <img src={PUBLICURL+'/images/oldworks/album/'+item }alt="" />
                     </li>
                   )
                 })
