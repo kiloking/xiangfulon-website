@@ -6,7 +6,8 @@ function WatchOldProject() {
   const {projectid} = useParams()
   const [data ,setData] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0) 
-
+  const currentEnv = process.env.NODE_ENV
+  // development  production
   useEffect(()=>{
     const currentData = oldProjects.find((item)=>{
       return item.project_code === projectid
@@ -15,7 +16,7 @@ function WatchOldProject() {
   })
   return (
     <div className='w-full h-screen bg-cover bg-center bg-no-repeat '
-      style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blockbg.png' })`}}
+      style={{backgroundImage: `url(${currentEnv === 'development' ? process.env.PUBLIC_URL + '/images/blockbg.png' : './images/blockbg.png' })`}}
     >
       <div className='px-10 pt-20 '>
         <Link to="/work-1"><FaArrowLeft size="36px" color="black"/></Link>
