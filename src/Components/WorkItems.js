@@ -226,7 +226,7 @@ export const newProjects = [
     project_code:"new_work02",
     images:['new_work02_1.png','new_work02_2.png'],
     map_image:"new_work02_map.png",
-    address:"新北市蘆洲區三民",
+    address:"新北市蘆洲區三民路",
     land_size:"492.80坪",
     house_size:"25-39坪",
     build_floor:"14F+B3F",
