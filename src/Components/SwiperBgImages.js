@@ -16,7 +16,7 @@ function SwiperBgImages({imgData}) {
         modules={[EffectFade,Autoplay]}
         className="mySwiper "
       >
-        {
+        { imgData ?
           imgData.map((item,index)=>{
             return(
               <SwiperSlide key={index}>
@@ -26,7 +26,7 @@ function SwiperBgImages({imgData}) {
                 </div>
               </SwiperSlide>
             )
-          })
+          }) : <div>Loading</div>
         }
 
 

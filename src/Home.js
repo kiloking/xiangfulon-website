@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
 import SwiperBgImages from './Components/SwiperBgImages'
-import homeBannerItem from './homeBannerItem.json'
+import {homeBanner} from './HomeBannerItem'
 function Home() {
-  const {homeBanner} =homeBannerItem
 
   return (
     <div className='h-screen'>

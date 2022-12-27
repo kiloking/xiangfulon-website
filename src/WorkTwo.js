@@ -14,7 +14,7 @@ function WorkTwo() {
       style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg02.png' })`}}
     >
       <div className=' absolute bottom-0 left-10'>
-        <img src={process.env.PUBLIC_URL+'/images/worktwo_pic01.png'} alt="" />
+        <img src={process.env.PUBLIC_URL+'/images/worktwo_pic01.png'} alt=""  className='w-44'/>
       </div>
       <div className='px-10 pt-16 h-screen overflow-y-auto scroll-smooth'>
         <MenuTwo />
