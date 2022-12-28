@@ -7,7 +7,10 @@ function Navbar() {
   const [click,setClick] = useState(false)
   const [dropdown, setDropdown] = useState(false);
   const [currentItem, setCurrentItem] = useState(0);
-  const handleClick = ()=> setClick(!click)
+  const handleClick = ()=> {
+    console.log('clock')
+    setClick(!click)
+  }
   const closeMobileMenu = () => setClick(false)
   const onMouseEnter = (num) => {
     setCurrentItem(num)
@@ -27,17 +30,17 @@ function Navbar() {
   };
   
   return (
-    <div className=" flex  items-center text-black py-3 px-6  w-full z-50 bg-white h-16 fixed  ">
+    <div className=" flex  items-center text-black py-3 px-6  w-full z-50 bg-white h-16 fixed ">
       <div className=''>
         <Link to='/'>
           <img src={process.env.PUBLIC_URL+ '/images/header_logo.png' } alt="" className='max-w-full w-44' />
         </Link>
         
       </div>
-      <div onClick={handleClick}>
+      <div onClick={handleClick} className=" ml-auto  cursor-pointer md:hidden">
         { click ? <FaTimes/> : <FaBars/>}
       </div>
-      <ul className='menu_list flex ml-auto text-sm flex-wrap items-center  '>
+      <ul className={'menu_list hidden md:flex ml-auto text-sm flex-wrap items-center  '}>
         <li 
           className=" hover:text-[#AE121F] transition group relative px-6 py-5 "
           onMouseEnter={()=>{onMouseEnter(1)}}
@@ -68,6 +71,56 @@ function Navbar() {
         <div className='text-[#AE121F] mx-5'>/</div>
         <li className=" hover:text-[#AE121F] transition group relative px-6 py-5">
           <Link to="/contact">聯絡我們</Link>
+        </li>
+      </ul>
+      {/* mobile */}
+      <ul className={'menu_list_mobile lg:hidden  flex  text-2xl pl-20 absolute w-full h-[100vh] flex-col transition-all opacity-100 -z-10  left-0 bg-white pt-10  ' + (click ? ' top-10'  : '  -top-[100vh]' )}>
+        <li 
+          className=" hover:text-[#AE121F] transition group relative py-5 "
+
+        >
+          <Link to='/about-1' className='font-bold' onClick={() => setClick(false)}>品牌理念</Link>
+          <ul className='mt-4 flex flex-col'>
+            {MenuItems01.map((item,index)=>{
+              return(
+                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-3'>
+                  - {item.title}
+                </Link>
+              )
+            })}
+          </ul>
+        </li>
+       
+        <li 
+          className=" hover:text-[#AE121F] transition group relative   py-5"
+        >
+          <Link to='/work-1' className='font-bold' onClick={() => setClick(false)}>業績沿革</Link>
+          <ul className='mt-4 flex flex-col'>
+            {MenuItems02.map((item,index)=>{
+              return(
+                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-3'>
+                  - {item.title}
+                </Link>
+              )
+            })}
+          </ul>
+        </li>
+        <li 
+          className=" hover:text-[#AE121F] transition group relative py-5"
+        >
+          <Link to='/news-1' className='font-bold' onClick={() => setClick(false)}>最新消息</Link>
+          <ul className='mt-4 flex flex-col'>
+            {MenuItems03.map((item,index)=>{
+              return(
+                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-3'>
+                  - {item.title}
+                </Link>
+              )
+            })}
+          </ul>
+        </li>
+        <li className=" hover:text-[#AE121F] transition group relative py-5">
+          <Link to="/contact"  className='font-bold' onClick={() => setClick(false)}>聯絡我們</Link>
         </li>
       </ul>
     </div>

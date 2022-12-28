@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter , Routes, Route} from 'react-router-dom';
+import { HashRouter, BrowserRouter , Routes, Route} from 'react-router-dom';
 import PublicPageLayout from './Layouts/PublicPageLayout'
 import Home from './Home';
 import AboutOne from './AboutOne';
@@ -13,9 +13,8 @@ import Contact from './Contact';
 import WatchOldProject from './WatchOldProject';
 import WatchArticle from './WatchArticle';
 function App() {
-  console.log(process.env.NODE_ENV)
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes> 
         <Route  exact path="/"  element={ <PublicPageLayout/>}>
           <Route path="" element={<Home />} />
@@ -32,7 +31,7 @@ function App() {
         
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

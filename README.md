@@ -1,3 +1,56 @@
+# Swiper sample
+
+```
+<Swiper
+            style={{
+              "--swiper-navigation-color": "#fff",
+              "--swiper-pagination-color": "#fff",
+            }}
+            loop={true}
+            spaceBetween={10}
+            navigation={true}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper2 w-full"
+          >
+            {
+              data.albums &&
+              data.albums.map((item,index)=>{
+                return(
+                  <SwiperSlide key={'main'+index} >
+                    <img src={PUBLICURL+'/images/oldworks/album/'+item}  className="w-full"/>
+                  </SwiperSlide>
+                )
+              })
+            }
+
+          </Swiper>
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            loop={true}
+            spaceBetween={10}
+            slidesPerView={5}
+            slideToClickedSlide={true}
+            centeredSlides={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper mt-4"
+            
+          >
+            {
+              data.albums &&
+              data.albums.map((item,index)=>{
+                return(
+                  <SwiperSlide key={'thumb'+index} >
+                    <img src={PUBLICURL+'/images/oldworks/album/'+item} />
+                  </SwiperSlide>
+                )
+              })
+            }
+          </Swiper>
+```
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

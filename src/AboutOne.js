@@ -3,10 +3,10 @@ import MenuOne from './Components/MenuOne'
 function AboutOne() {
   return (
     <div 
-      className='w-full flex justify-between items-center '
+      className='w-full flex flex-col md:flex-row justify-between items-center '
     >
       <div 
-        className='w-1/2 h-screen px-10 py-16'
+        className='w-full md:w-1/2 h-[70vh] md:h-screen px-10 py-16 bg-center bg-no-repeat bg-cover overflow-y-auto'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blockbg.png' })`}}
       >
         <MenuOne />
@@ -26,7 +26,7 @@ function AboutOne() {
         </div>
       </div>
       <div 
-        className='w-1/2 h-screen bg-center bg-no-repeat'
+        className='w-full md:w-1/2 h-[30vh] md:h-screen bg-center bg-no-repeat bg-cover'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/about/aboutbg-1.png' })`}}
       ></div>
     </div>

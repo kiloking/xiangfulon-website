@@ -6,7 +6,7 @@ function WatchArticle() {
   const {articleid} = useParams()
   const [data ,setData] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0) 
-  const currentEnv = process.env.NODE_ENV
+  const currentEnv = 'development'
   // development  production
   const PUBLICURL = currentEnv === 'development' ?  process.env.PUBLIC_URL : '..'
   useEffect(()=>{
@@ -23,8 +23,8 @@ function WatchArticle() {
         <Link to="/news-2"><FaArrowLeft size="36px" color="black"/></Link>
       </div>
       {data ?
-        <div className='px-10 py-14 flex gap-20'>
-          <div className='w-1/2 flex flex-col gap-5 overflow-y-auto  max-h-[520px] p-3'>
+        <div className='px-10 py-14 flex flex-col md:flex-row gap-20'>
+          <div className='w-full md:w-1/2 flex flex-col gap-5 overflow-y-auto  max-h-[520px] p-3'>
             <div className='flex gap-4 items-center'>
               <div className='text-[#003049] '>
                 <div className='text-lg tracking-wider'>{data.news_date}</div>
@@ -42,7 +42,7 @@ function WatchArticle() {
               
             </div>
           </div>
-          <div className='w-1/2'>
+          <div className='w-full md:w-1/2'>
             <img src={PUBLICURL+'/images/news/'+data.article_image } alt=""  className='max-w-full' />
             <div>{data.source}</div>
           </div>

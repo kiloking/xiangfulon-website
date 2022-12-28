@@ -52,7 +52,7 @@ function Contact() {
           <div>FAX 02-2857-0033</div>
         </div>
       </div>
-      <div className='absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10 w-2/5 h-1/2'>
+      <div className='absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10 w-4/5 md:w-2/5 h-1/2'>
         <div className=''>
           <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-10  rel" data-aos="fade-up" data-aos-duration="1500" >
             <div className='w-full  my-2 '>

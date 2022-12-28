@@ -5,7 +5,7 @@ import MenuThree from './Components/MenuThree'
 function NewsOne() {
   return (
     <div 
-      className='w-full bg-[#F9F9F9] bg-cover bg-center bg-no-repeat'
+      className='w-full bg-[#F9F9F9] bg-cover bg-center bg-no-repeat min-h-screen'
       style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blockbg.png' })`}}
     >
       <div className='px-10 py-16'>
@@ -15,16 +15,16 @@ function NewsOne() {
             newProjects.map((item,index)=>{
               const{title,map_image,address,land_size,house_size,build_floor,build_count,build_design,build_create,build_openspace,build_env,start_date} = item
               return(
-                <div className='flex gap-6 mb-20'>
-                  <div className='flex gap-5 w-2/3'>
+                <div className='flex gap-6 mb-20 flex-col md:flex-row'>
+                  <div className='flex gap-5 w-full md:w-2/3'>
                     {item.images.map((data,i)=>{
                       return(
                         <div className=''><img src={process.env.PUBLIC_URL+'/images/newworks/'+data} alt="" className='p-4 bg-white shadow-md' /></div>
                       )
                     })}
                   </div>
-                  <div className='flex w-2/3 gap-5 items-center'>
-                    <ul className='w-1/2 leading-7 text-zinc-800'>
+                  <div className='flex flex-col md:flex-row w-full md:w-2/3 gap-5 items-center'>
+                    <ul className='w-full md:w-1/2 leading-7 text-zinc-800'>
                       {title            && <div className='text-lg text-[#003049] font-bold mb-4'>{title}</div> }
                       {address          && <div>基地位置 / {address}</div>}
                       {land_size        && <div>基地面積 / {land_size}</div>} 
