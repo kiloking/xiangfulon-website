@@ -3,6 +3,7 @@ import { Link ,useLocation  } from "react-router-dom";
 import Dropdown from './Dropdown';
 import { FaTimes,FaBars } from "react-icons/fa";
 import { MenuItems01, MenuItems02, MenuItems03} from './ＭenuItems'
+import { motion } from "framer-motion";
 function Navbar() {
   const [click,setClick] = useState(false)
   const [dropdown, setDropdown] = useState(false);
@@ -30,7 +31,15 @@ function Navbar() {
   };
   
   return (
-    <div className=" flex  items-center text-black py-3 px-6  w-full z-50 bg-white h-16 fixed ">
+    <motion.div 
+      initial={{ opacity: 0, y: -180 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        ease: "easeInOut",
+        duration: 1,
+        delay: 0.6,
+      }}
+      className=" flex  items-center text-black py-3 px-6  w-full z-50 bg-white h-16 fixed ">
       <div className=''>
         <Link to='/'>
           <img src={process.env.PUBLIC_URL+ '/images/header_logo.png' } alt="" className='max-w-full w-44' />
@@ -56,7 +65,7 @@ function Navbar() {
           onMouseEnter={()=>{onMouseEnter(2)}}
           onMouseLeave={onMouseLeave}
         >
-          <Link>業績沿革</Link>
+          <Link to='/work-1'>業績沿革</Link>
           {currentItem === 2 ?  dropdown && <Dropdown menuItems={MenuItems02}/> : null         }
         </li>
         <div className='text-[#AE121F] mx-5'>/</div>
@@ -65,7 +74,7 @@ function Navbar() {
           onMouseEnter={()=>{onMouseEnter(3)}}
           onMouseLeave={onMouseLeave}
         >
-          <Link>最新消息</Link>
+          <Link to='/news-1'>最新消息</Link>
           {currentItem === 3 ?  dropdown && <Dropdown menuItems={MenuItems03}/> : null         }
         </li>
         <div className='text-[#AE121F] mx-5'>/</div>
@@ -123,7 +132,7 @@ function Navbar() {
           <Link to="/contact"  className='font-bold' onClick={() => setClick(false)}>聯絡我們</Link>
         </li>
       </ul>
-    </div>
+    </motion.div>
   )
 }
 

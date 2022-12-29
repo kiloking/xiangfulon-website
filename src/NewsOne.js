@@ -2,6 +2,7 @@ import React from 'react'
 import { MenuItems03} from './Components/ＭenuItems'
 import {newProjects} from './Components/WorkItems'
 import MenuThree from './Components/MenuThree'
+import { motion } from "framer-motion";
 function NewsOne() {
   return (
     <div 
@@ -15,7 +16,15 @@ function NewsOne() {
             newProjects.map((item,index)=>{
               const{title,map_image,address,land_size,house_size,build_floor,build_count,build_design,build_create,build_openspace,build_env,start_date} = item
               return(
-                <div className='flex gap-6 mb-20 flex-col md:flex-row'>
+                <motion.div 
+                  initial={{ opacity: 0,y:'10' }}
+                  animate={{ opacity: 1,y:0 }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: .6,
+                    delay: 0.5 * index,
+                  }}
+                className='flex gap-6 mb-20 flex-col md:flex-row'>
                   <div className='flex gap-5 w-full md:w-2/3'>
                     {item.images.map((data,i)=>{
                       return(
@@ -45,7 +54,7 @@ function NewsOne() {
                   </div>
                   
 
-                </div>
+                </motion.div>
               )
             })
           }

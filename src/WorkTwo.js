@@ -2,6 +2,7 @@ import React from 'react'
 import {oldProjects} from './Components/WorkItems'
 import { Link  } from "react-router-dom";
 import MenuTwo from './Components/MenuTwo'
+import { motion } from "framer-motion";
 function WorkTwo() {
 
 
@@ -13,8 +14,8 @@ function WorkTwo() {
       className='w-full bg-[#F9F9F9] h-screen overflow-hidden relative bg-center bg-no-repeat bg-cover'
       style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg02.png' })`}}
     >
-      <div className=' absolute bottom-0 left-10'>
-        <img src={process.env.PUBLIC_URL+'/images/worktwo_pic01.png'} alt=""  className='w-44'/>
+      <div className=' absolute bottom-0 left-10 w-1/5'>
+        <img src={process.env.PUBLIC_URL+'/images/worktwo_pic01.png'} alt=""  className='w-full'/>
       </div>
       <div className='px-10 pt-16 h-screen overflow-y-auto scroll-smooth'>
         <MenuTwo />
@@ -27,7 +28,15 @@ function WorkTwo() {
             <ul>
               {newArray.map((item,index,newArray)=>{
                 return(
-                  <li key={'two'+index}  className=" ">
+                  <motion.li 
+                  initial={{ opacity: 0,x:'20' }}
+                  animate={{ opacity: 1,x:0 }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: 1,
+                    delay: 0.3 * index,
+                  }}
+                  key={'two'+index}  className=" ">
                     <Link className='flex items-center mr-3 gap-5 mb-10 transition-all hover:brightness-125 relative ' to={"/watchproject/"+item.project_code}>
                       
                       <div className='flex flex-col items-center'>
@@ -48,7 +57,7 @@ function WorkTwo() {
                         </div>
                       </div>
                     </Link>
-                  </li>
+                  </motion.li>
                 )
               })}
             </ul>

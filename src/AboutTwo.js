@@ -1,5 +1,6 @@
 import React from 'react'
 import MenuOne from './Components/MenuOne'
+import { motion } from "framer-motion";
 function AboutTwo() {
   return (
     <div 
@@ -11,7 +12,15 @@ function AboutTwo() {
       >
         <MenuOne />
         <div className='text-[#012c48] text-xl font-bold py-6'>一座會思考的建築</div>
-        <div className=' leading-10'>
+        <motion.div
+         initial={{ opacity: 0,y:'10' }}
+         animate={{ opacity: 1,y:0 }}
+         transition={{
+           ease: "easeInOut",
+           duration: .6,
+           delay: 0.1,
+         }}
+         className=' leading-10'>
           建築就像一本打開的書， <br /> 
           從中你能看到 一座城市的抱負。<br /> 
           <b>---芬蘭裔美籍建築師埃羅• 沙里寧(EeroSaarinen)</b>
@@ -28,12 +37,19 @@ function AboutTwo() {
 
 
           
-        </div>
+        </motion.div>
       </div>
-      <div 
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          ease: "easeInOut",
+          duration: .6,
+          delay: 0.1,
+        }}
         className='w-full md:w-1/2 h-[30vh] md:h-screen bg-cover bg-center bg-no-repeat'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/about/aboutbg-2.png' })`}}
-      ></div>
+      ></motion.div>
     </div>
   )
 }

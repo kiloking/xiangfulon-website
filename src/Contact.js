@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { useForm, reset } from "react-hook-form";
+import { motion } from "framer-motion";
 function Contact() {
   const [mailSent, setmailSent] = useState(false);
   const [error, setError] = useState(null);
@@ -45,15 +46,31 @@ function Contact() {
       className='w-full  h-screen overflow-hidden relative bg-center bg-no-repeat bg-cover text-zinc-900'
       style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg05.png' })`}}
     >
-      <div className=' absolute bottom-5 left-5 '>
+      <motion.div 
+      initial={{ opacity: 0,y:'10' }}
+      animate={{ opacity: 1,y:0 }}
+      transition={{
+        ease: "easeInOut",
+        duration: .6,
+        delay: 0.5,
+      }}
+      className=' absolute bottom-5 left-5 '>
         <div className='text-base mb-5'>新北市三重區三德街36號</div>  
         <div className='border-l-4 border-red-700 pl-4'>
           <div>TEL 02-2857-9933</div> 
           <div>FAX 02-2857-0033</div>
         </div>
-      </div>
-      <div className='absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10 w-4/5 md:w-2/5 h-1/2'>
-        <div className=''>
+      </motion.div>
+      <motion.div className='absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10 w-4/5 md:w-2/5 h-1/2'>
+        <motion.div 
+        initial={{ opacity: 0,y:'10' }}
+        animate={{ opacity: 1,y:0 }}
+        transition={{
+          ease: "easeInOut",
+          duration: .6,
+          delay: 0.1,
+        }}
+        className=''>
           <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-10  rel" data-aos="fade-up" data-aos-duration="1500" >
             <div className='w-full  my-2 '>
               <input type="text" className="block bg-transparent border-b-2 border-zinc-900 placeholder:text-zinc-900  w-full
@@ -86,8 +103,8 @@ function Contact() {
             </div>
             <div>{error}  {mailSent}</div>            
           </form>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   )
 }

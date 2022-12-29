@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import MenuOne from './Components/MenuOne'
+import { motion } from "framer-motion";
 function AboutOne() {
   return (
     <div 
@@ -11,7 +12,15 @@ function AboutOne() {
       >
         <MenuOne />
         <div className='text-[#012c48] text-xl font-bold py-6'>建築初衷 源起</div>
-        <div className=' leading-10'>
+        <motion.div 
+          initial={{ opacity: 0,y:'10' }}
+          animate={{ opacity: 1,y:0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: .6,
+            delay: 0.1,
+          }}
+          className=' leading-10'>
           <b>一日建築人，終生建築魂</b> <br /><br /> 
 
           從一磚一瓦到一宅一景，祥富龍/祥旭龍實業專注打造幸福家園。<br /> 
@@ -23,12 +32,19 @@ function AboutOne() {
           自土木營建基層打底深耕，我們傳承了對建築的愛，<br /> 
           代代以建築專業傳遞美好，不僅接棒對建築的熱忱，<br /> 
           更將創造加倍宏遠達觀的未來。
-        </div>
+        </motion.div>
       </div>
-      <div 
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          ease: "easeInOut",
+          duration: .6,
+          delay: 0.1,
+        }}
         className='w-full md:w-1/2 h-[30vh] md:h-screen bg-center bg-no-repeat bg-cover'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/about/aboutbg-1.png' })`}}
-      ></div>
+      ></motion.div>
     </div>
   )
 }

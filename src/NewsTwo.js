@@ -3,6 +3,7 @@ import { MenuItems03} from './Components/ＭenuItems'
 import {news} from './Components/NewsItems'
 import MenuThree from './Components/MenuThree'
 import { Link  } from "react-router-dom";
+import { motion } from "framer-motion";
 function NewsTwo() {
   return (
     <div 
@@ -16,22 +17,32 @@ function NewsTwo() {
             news.map((item,index)=>{
               const{id,title,source,news_years,news_date,cover_image,content} = item
               return(
-                <Link to={"/watcharticle/"+id} className=' gap-6 mb-20 w-full  md:w-1/3'>
-                  <div className='mb-7'>
-                    <img src={process.env.PUBLIC_URL+'/images/news/'+cover_image} alt=""  className='max-w-full'/>
-                  </div>
-                  <div className='flex items-center gap-6 reak-words pr-6'>
-                    <div className='text-[#003049] '>
-                      <div className='text-lg tracking-wider'>{news_date}</div>
-                      <div className='text-sm'>{news_years}</div>
+                <motion.div 
+                  initial={{ opacity: 0,y:'10' }}
+                  animate={{ opacity: 1,y:0 }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: .6,
+                    delay: 0.3 * index,
+                  }}
+                  key={'news'+id} className=' gap-6 mb-20 w-full  md:w-1/3'>
+                  <Link to={"/watcharticle/"+id} className=' gap-6 w-full '>
+                    <div className='mb-7'>
+                      <img src={process.env.PUBLIC_URL+'/images/news/'+cover_image} alt=""  className='max-w-full'/>
                     </div>
-                    <div className='text-xl font-bold'>
-                      {title}
+                    <div className='flex items-center gap-6 reak-words pr-6'>
+                      <div className='text-[#003049] '>
+                        <div className='text-lg tracking-wider'>{news_date}</div>
+                        <div className='text-sm'>{news_years}</div>
+                      </div>
+                      <div className='text-xl font-bold'>
+                        {title}
+                      </div>
                     </div>
-                  </div>
-                  
+                    
 
-                </Link>
+                  </Link>
+                </motion.div>
               )
             })
           }
