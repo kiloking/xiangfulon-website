@@ -28,13 +28,13 @@ function NewsOne() {
                   <div className='flex gap-5 w-full md:w-2/3'>
                     {item.images.map((data,i)=>{
                       return(
-                        <div className=''><img src={process.env.PUBLIC_URL+'/images/newworks/'+data} alt="" className='p-4 bg-white shadow-md' /></div>
+                        <div className='w-1/2'><img src={process.env.PUBLIC_URL+'/images/newworks/'+data} alt="" className='p-4 bg-white shadow-md w-full' /></div>
                       )
                     })}
                   </div>
                   <div className='flex flex-col md:flex-row w-full md:w-2/3 gap-5 items-center'>
-                    <ul className='w-full md:w-1/2 leading-7 text-zinc-800'>
-                      {title            && <div className='text-lg text-[#003049] font-bold mb-4'>{title}</div> }
+                    <ul className='w-full md:w-1/2 leading-10 text-zinc-800 text-lg'>
+                      {title            && <div className='text-xl text-[#003049] font-bold mb-4'>{title}</div> }
                       {address          && <div>基地位置 / {address}</div>}
                       {land_size        && <div>基地面積 / {land_size}</div>} 
                       {house_size       && <div>規劑坪數 / {house_size}</div>} 

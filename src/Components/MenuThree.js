@@ -5,7 +5,7 @@ function MenuThree() {
   let location = useLocation();
   return (
     <div className='py-16'>
-      <ul className='flex gap-6'>
+      <ul className='flex gap-6  text-lg'>
         {MenuItems03.map((item,index)=>{
           return(
             <li key={index}>

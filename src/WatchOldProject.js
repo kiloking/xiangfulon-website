@@ -64,8 +64,8 @@ function WatchOldProject() {
           <div className='w-full md:w-1/3'>
             <img src={PUBLICURL+"/images/oldworks/"+ data.project_code+'@3x.png' } alt="" className='max-w-full'/>
           </div>
-          <ul className='w-full md:w-1/2 leading-8 text-zinc-800 mt-10'>
-            {data.title            && <div className='text-2xl text-[#003049] font-bold mb-4'>{data.title}{currentIndex}</div> }
+          <ul className='w-full md:w-1/2 leading-10 text-zinc-800 mt-10 text-lg'>
+            {data.title            && <div className='text-2xl text-[#003049] font-bold mb-4'>{data.title}</div> }
             {data.address          && <div>基地位置 / {data.address}</div>}
             {data.land_size        && <div>基地面積 / {data.land_size}</div>} 
             {data.house_size       && <div>規劑坪數 / {data.house_size}</div>} 

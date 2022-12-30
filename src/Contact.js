@@ -54,8 +54,8 @@ function Contact() {
         duration: .6,
         delay: 0.5,
       }}
-      className=' absolute bottom-5 left-5 '>
-        <div className='text-base mb-5'>新北市三重區三德街36號</div>  
+      className=' absolute bottom-5 left-5 text-lg'>
+        <div className='text-xl mb-5'>新北市三重區三德街36號</div>  
         <div className='border-l-4 border-red-700 pl-4'>
           <div>TEL 02-2857-9933</div> 
           <div>FAX 02-2857-0033</div>
@@ -71,7 +71,7 @@ function Contact() {
           delay: 0.1,
         }}
         className=''>
-          <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-10  rel" data-aos="fade-up" data-aos-duration="1500" >
+          <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-10 text-lg  rel" data-aos="fade-up" data-aos-duration="1500" >
             <div className='w-full  my-2 '>
               <input type="text" className="block bg-transparent border-b-2 border-zinc-900 placeholder:text-zinc-900  w-full
                   px-2 py-2 " placeholder="詢問主題"   {...register("subject", { required: true})}/>

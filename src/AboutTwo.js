@@ -11,7 +11,7 @@ function AboutTwo() {
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blockbg.png' })`}}
       >
         <MenuOne />
-        <div className='text-[#012c48] text-xl font-bold py-6'>一座會思考的建築</div>
+        <div className='text-[#012c48] text-2xl font-bold py-6 '>一座會思考的建築</div>
         <motion.div
          initial={{ opacity: 0,y:'10' }}
          animate={{ opacity: 1,y:0 }}
@@ -20,7 +20,7 @@ function AboutTwo() {
            duration: .6,
            delay: 0.1,
          }}
-         className=' leading-10'>
+         className=' leading-10 text-lg'>
           建築就像一本打開的書， <br /> 
           從中你能看到 一座城市的抱負。<br /> 
           <b>---芬蘭裔美籍建築師埃羅• 沙里寧(EeroSaarinen)</b>

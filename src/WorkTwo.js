@@ -21,7 +21,7 @@ function WorkTwo() {
         <MenuTwo />
         <div className='flex flex-col md:flex-row '>
           <div className='w-2/5 relative mb-6 md:mb-0'>
-            <div className='text-[#385173] font-bold text-xl'>祥富龍/祥旭龍實業 <br /> 歷年建築軌跡</div>
+            <div className='text-[#385173] font-bold text-2xl'>祥富龍/祥旭龍實業 <br /> 歷年建築軌跡</div>
 
           </div>
           <div>
@@ -39,7 +39,7 @@ function WorkTwo() {
                   key={'two'+index}  className=" ">
                     <Link className='flex items-center mr-3 gap-5 mb-10 transition-all hover:brightness-125 relative ' to={"/watchproject/"+item.project_code}>
                       
-                      <div className='flex flex-col items-center'>
+                      <div className='flex flex-col items-center text-lg'>
                         <div className='w-8 text-[#669BBC] font-bold'>{item.open_year}</div>
                         {index !== newArray.length-1 &&
                           <div className=' absolute  h-14 w-[3px] bg-[#385173] top-16'></div>
@@ -48,11 +48,11 @@ function WorkTwo() {
                       </div>
                       
                       <div className='flex'>
-                        <div className='flex  items-center gap-5'>
+                        <div className='flex  items-center gap-5 text-lg'>
                           <img src={process.env.PUBLIC_URL+'/images/oldworks/'+item.year_cover_image} alt=""  className='w-20'/>
                           <div>
                             <div className='text-[#385173] font-medium'>{item.title}</div>
-                            <div className='text-sm text-zinc-700'>{item.address}</div>
+                            <div className='text-base text-zinc-700'>{item.address}</div>
                           </div>
                         </div>
                       </div>

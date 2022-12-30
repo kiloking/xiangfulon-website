@@ -12,7 +12,7 @@ function NewsTwo() {
     >
       <div className='px-10 py-16'>
         <MenuThree />
-        <div className='flex flex-col md:flex-row gap-6 justify-start break-words items-start'>
+        <div className='flex flex-col md:flex-row gap-8 justify-start break-words items-start'>
           {
             news.map((item,index)=>{
               const{id,title,source,news_years,news_date,cover_image,content} = item
@@ -25,17 +25,17 @@ function NewsTwo() {
                     duration: .6,
                     delay: 0.3 * index,
                   }}
-                  key={'news'+id} className=' gap-6 mb-20 w-full  md:w-1/3'>
+                  key={'news'+id} className=' gap-10 mb-20 w-full  md:w-1/3'>
                   <Link to={"/watcharticle/"+id} className=' gap-6 w-full '>
                     <div className='mb-7'>
-                      <img src={process.env.PUBLIC_URL+'/images/news/'+cover_image} alt=""  className='max-w-full'/>
+                      <img src={process.env.PUBLIC_URL+'/images/news/'+cover_image} alt=""  className='w-full'/>
                     </div>
                     <div className='flex items-center gap-6 reak-words pr-6'>
                       <div className='text-[#003049] '>
                         <div className='text-lg tracking-wider'>{news_date}</div>
-                        <div className='text-sm'>{news_years}</div>
+                        <div className='text-base'>{news_years}</div>
                       </div>
-                      <div className='text-xl font-bold'>
+                      <div className='text-2xl font-bold'>
                         {title}
                       </div>
                     </div>

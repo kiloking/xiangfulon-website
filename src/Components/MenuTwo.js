@@ -5,7 +5,7 @@ function MenuTwo() {
   let location = useLocation();
   return (
     <div className='py-16'>
-      <ul className='flex gap-6'>
+      <ul className='flex gap-6  text-lg'>
         {MenuItems02.map((item,index)=>{
           return(
             <li key={index}>

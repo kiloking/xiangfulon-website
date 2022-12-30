@@ -11,7 +11,7 @@ function AboutOne() {
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blockbg.png' })`}}
       >
         <MenuOne />
-        <div className='text-[#012c48] text-xl font-bold py-6'>建築初衷 源起</div>
+        <div className='text-[#012c48] text-2xl font-bold py-6'>建築初衷 源起</div>
         <motion.div 
           initial={{ opacity: 0,y:'10' }}
           animate={{ opacity: 1,y:0 }}
@@ -20,7 +20,7 @@ function AboutOne() {
             duration: .6,
             delay: 0.1,
           }}
-          className=' leading-10'>
+          className=' leading-10 text-lg'>
           <b>一日建築人，終生建築魂</b> <br /><br /> 
 
           從一磚一瓦到一宅一景，祥富龍/祥旭龍實業專注打造幸福家園。<br /> 
