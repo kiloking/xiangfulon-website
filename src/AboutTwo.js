@@ -20,7 +20,7 @@ function AboutTwo() {
            duration: .6,
            delay: 0.1,
          }}
-         className=' leading-10 text-lg'>
+         className=' leading-10 text-[20px]'>
           建築就像一本打開的書， <br /> 
           從中你能看到 一座城市的抱負。<br /> 
           <b>---芬蘭裔美籍建築師埃羅• 沙里寧(EeroSaarinen)</b>

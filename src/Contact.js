@@ -8,11 +8,12 @@ function Contact() {
   const [formStatus , setFormStatus] = useState(false)
   const { register, handleSubmit, formState:{ errors },reset } = useForm({
     defaultValues:{
+      subject:"",
       name:"",
+      company:"",
       tel: "",
       mail: "",
-      house_types:"",
-      area:""
+      msg: "",
     }
   });
   const sendFormStatusModal = ()=>{

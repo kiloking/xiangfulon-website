@@ -20,7 +20,7 @@ function AboutThree() {
           duration: .6,
           delay: 0.1,
         }}
-        className=' leading-12 text-lg'>
+        className=' leading-12 text-[20px]'>
           <div className='mb-4'>
             <div className='text-[#012c48] text-xl font-bold mb-4'>Centre 選址</div>
             <div className=' leading-6'>祥富龍/祥旭龍實業感謝每一塊珍貴、無可複製的土地。透過獨特的地塊能量，我們以數十年專業經驗，揉和理性與感性，為土地量身裁製心中的理想建築，成就社會，城市、居者的所見所享，形塑生活背景與幸福藍圖。</div>

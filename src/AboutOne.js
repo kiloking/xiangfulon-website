@@ -20,7 +20,7 @@ function AboutOne() {
             duration: .6,
             delay: 0.1,
           }}
-          className=' leading-10 text-lg'>
+          className=' leading-10 text-[20px]'>
           <b>一日建築人，終生建築魂</b> <br /><br /> 
 
           從一磚一瓦到一宅一景，祥富龍/祥旭龍實業專注打造幸福家園。<br /> 

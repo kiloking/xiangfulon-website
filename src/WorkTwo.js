@@ -48,10 +48,10 @@ function WorkTwo() {
                       </div>
                       
                       <div className='flex'>
-                        <div className='flex  items-center gap-5 text-lg'>
+                        <div className='flex  items-center gap-5 text-[23px]'>
                           <img src={process.env.PUBLIC_URL+'/images/oldworks/'+item.year_cover_image} alt=""  className='w-20'/>
                           <div>
-                            <div className='text-[#385173] font-medium'>{item.title}</div>
+                            <div className='text-[#385173] font-bold'>{item.title}</div>
                             <div className='text-base text-zinc-700'>{item.address}</div>
                           </div>
                         </div>

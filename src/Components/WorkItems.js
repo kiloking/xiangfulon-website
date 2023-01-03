@@ -235,6 +235,6 @@ export const newProjects = [
     build_create:"全國營造股份有限公司",
     build_openspace:"",
     build_env:"",
-    start_date:"111-10-27",    
+    start_date:"110-10-27",    
   }
 ]
