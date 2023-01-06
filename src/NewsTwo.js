@@ -32,8 +32,8 @@ function NewsTwo() {
                     </div>
                     <div className='flex items-center gap-6 reak-words pr-6'>
                       <div className='text-[#003049] '>
-                        <div className='text-lg tracking-wider'>{news_date}</div>
-                        <div className='text-base'>{news_years}</div>
+                        <div className='text-lg tracking-wider font-bold'>{news_date}</div>
+                        <div className='text-base font-bold'>{news_years}</div>
                       </div>
                       <div className='text-2xl font-bold'>
                         {title}

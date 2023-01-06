@@ -49,7 +49,7 @@ function Navbar() {
       <div onClick={handleClick} className=" ml-auto  cursor-pointer md:hidden">
         { click ? <FaTimes/> : <FaBars/>}
       </div>
-      <ul className={'menu_list hidden md:flex ml-auto text-[18px] flex-wrap items-center  '}>
+      <ul className={'menu_list hidden sm:flex ml-auto text-[18px] flex-wrap items-center  '}>
         <li 
           className=" hover:text-[#AE121F] transition group relative px-6 py-5 "
           onMouseEnter={()=>{onMouseEnter(1)}}

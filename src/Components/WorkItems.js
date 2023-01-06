@@ -125,7 +125,14 @@ export const oldProjects = [
       "08/p03.png",
       "08/p04.png",
       "08/p05.png",
-      "08/p06.png"
+      "08/p06.png",
+      "08/p07.png",
+      "08/p08.png",
+      "08/p09.png",
+      "08/p10.png",
+      "08/p11.png",
+      "08/p12.png",
+      "08/p13.png",
     ]
   },
   {

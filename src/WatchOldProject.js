@@ -120,7 +120,7 @@ function WatchOldProject() {
               data.albums && <div><img src={PUBLICURL+'/images/oldworks/album/'+data.albums[currentIndex] } alt="" /></div>
             }*/}
             {
-             data.albums &&  <ul className='box-border mt-7 gap-1  grid grid-cols-2 md:grid-cols-4'>
+             data.albums &&  <ul className='box-border mt-7 gap-1  grid grid-cols-2 md:grid-cols-5'>
               {
                 data.albums.map((item,index)=>{
                   return(
