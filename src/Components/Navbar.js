@@ -85,14 +85,14 @@ function Navbar() {
       {/* mobile */}
       <ul className={'menu_list_mobile lg:hidden  flex  text-2xl pl-20 absolute w-full h-[100vh] flex-col transition-all opacity-100 -z-10  left-0 bg-white pt-10  ' + (click ? ' top-10'  : '  -top-[100vh]' )}>
         <li 
-          className=" hover:text-[#AE121F] transition group relative py-5 "
+          className=" hover:text-[#AE121F] transition group relative py-4 "
 
         >
           <Link to='/about-1' className='font-bold' onClick={() => setClick(false)}>品牌理念</Link>
           <ul className='mt-4 flex flex-col'>
             {MenuItems01.map((item,index)=>{
               return(
-                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-3'>
+                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-2'>
                   - {item.title}
                 </Link>
               )
@@ -101,13 +101,13 @@ function Navbar() {
         </li>
        
         <li 
-          className=" hover:text-[#AE121F] transition group relative   py-5"
+          className=" hover:text-[#AE121F] transition group relative   py-4"
         >
           <Link to='/work-1' className='font-bold' onClick={() => setClick(false)}>業績沿革</Link>
           <ul className='mt-4 flex flex-col'>
             {MenuItems02.map((item,index)=>{
               return(
-                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-3'>
+                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-2'>
                   - {item.title}
                 </Link>
               )
@@ -115,20 +115,20 @@ function Navbar() {
           </ul>
         </li>
         <li 
-          className=" hover:text-[#AE121F] transition group relative py-5"
+          className=" hover:text-[#AE121F] transition group relative py-4"
         >
           <Link to='/news-1' className='font-bold' onClick={() => setClick(false)}>最新消息</Link>
           <ul className='mt-4 flex flex-col'>
             {MenuItems03.map((item,index)=>{
               return(
-                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-3'>
+                <Link key={index} to={item.path} onClick={() => setClick(false)} className='text-lg p-2'>
                   - {item.title}
                 </Link>
               )
             })}
           </ul>
         </li>
-        <li className=" hover:text-[#AE121F] transition group relative py-5">
+        <li className=" hover:text-[#AE121F] transition group relative py-4">
           <Link to="/contact"  className='font-bold' onClick={() => setClick(false)}>聯絡我們</Link>
         </li>
       </ul>
