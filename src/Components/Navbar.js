@@ -47,7 +47,7 @@ function Navbar() {
         
       </div>
       <div onClick={handleClick} className=" ml-auto  cursor-pointer md:hidden">
-        { click ? <FaTimes/> : <FaBars/>}
+        { click ? <FaTimes size={25}/> : <FaBars size={25}/>}
       </div>
       <ul className={'menu_list hidden sm:flex ml-auto text-[18px] flex-wrap items-center  '}>
         <li 
