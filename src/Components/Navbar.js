@@ -83,7 +83,7 @@ function Navbar() {
         </li>
       </ul>
       {/* mobile */}
-      <ul className={'menu_list_mobile lg:hidden  flex  text-2xl pl-20 absolute w-full h-[100vh] flex-col transition-all opacity-100 -z-10  left-0 bg-white pt-10  ' + (click ? ' top-10'  : '  -top-[100vh]' )}>
+      <ul className={'menu_list_mobile lg:hidden  flex  text-2xl pl-20 absolute w-full h-[100vh] flex-col transition-all -z-10  left-0 bg-white pt-10  ' + (click ? ' top-5  opacity-100 '  : '  -top-[120vh] opacity-0' )}>
         <li 
           className=" hover:text-[#AE121F] transition group relative py-4 "
 

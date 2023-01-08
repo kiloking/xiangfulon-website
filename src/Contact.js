@@ -44,25 +44,11 @@ function Contact() {
   };
   return (
     <div 
-      className='w-full  h-screen overflow-hidden relative bg-center bg-no-repeat bg-cover text-zinc-900'
+      className='w-full  min-h-screen  relative bg-center bg-no-repeat bg-cover text-zinc-900 bg-fixed'
       style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg05.png' })`}}
     >
-      <motion.div 
-      initial={{ opacity: 0,y:'10' }}
-      animate={{ opacity: 1,y:0 }}
-      transition={{
-        ease: "easeInOut",
-        duration: .6,
-        delay: 0.5,
-      }}
-      className=' absolute bottom-5 left-5 text-lg'>
-        <div className='text-xl mb-5'>新北市三重區三德街36號</div>  
-        <div className='border-l-4 border-red-700 pl-4'>
-          <div>TEL 02-2857-9933</div> 
-          <div>FAX 02-2857-0033</div>
-        </div>
-      </motion.div>
-      <motion.div className='absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10 w-4/5 md:w-2/5 h-1/2'>
+      
+      <motion.div className='flex w-full justify-center items-center  min-h-screen flex-col relative pt-14 md:pt-0'>
         <motion.div 
         initial={{ opacity: 0,y:'10' }}
         animate={{ opacity: 1,y:0 }}
@@ -71,7 +57,7 @@ function Contact() {
           duration: .6,
           delay: 0.1,
         }}
-        className=''>
+        className='w-9/12 mx-auto md:w-1/3'>
           <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-10 text-lg  rel" data-aos="fade-up" data-aos-duration="1500" >
             <div className='w-full  my-2 '>
               <input type="text" className="block bg-transparent border-b-2 border-zinc-900 placeholder:text-zinc-900  w-full
@@ -105,6 +91,22 @@ function Contact() {
             <div>{error}  {mailSent}</div>            
           </form>
         </motion.div>
+        <motion.div 
+        initial={{ opacity: 0,y:'10' }}
+        animate={{ opacity: 1,y:0 }}
+        transition={{
+          ease: "easeInOut",
+          duration: .6,
+          delay: 0.5,
+        }}
+        className=' relative md:absolute my-6  md:my-0 md:bottom-5 left-0 md:left-5 text-lg'>
+          <div className='text-xl mb-5'>新北市三重區三德街36號</div>  
+          <div className='border-l-4 border-red-700 pl-4'>
+            <div>TEL 02-2857-9933</div> 
+            <div>FAX 02-2857-0033</div>
+          </div>
+        </motion.div>
+
       </motion.div>
     </div>
   )
