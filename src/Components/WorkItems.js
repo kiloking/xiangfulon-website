@@ -9,8 +9,8 @@ export const oldProjects = [
     house_size:"37.45-38.2坪",
     build_floor:"10F+B2F",
     build_count:"27戶+28車",
-    build_design:"林豐祥事務所",
-    build_create:"李清田",
+    build_design:"巨仲建築師事務所",
+    build_create:"振城營造股份有限公司",
     build_openspace:"",
     open_year:"2007"
     

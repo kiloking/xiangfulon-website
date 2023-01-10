@@ -37,7 +37,7 @@ function NewsOne() {
                       {title            && <div className='text-xl text-[#003049] font-bold mb-4'>{title}</div> }
                       {address          && <div>基地位置 / {address}</div>}
                       {land_size        && <div>基地面積 / {land_size}</div>} 
-                      {house_size       && <div>規劑坪數 / {house_size}</div>} 
+                      {house_size       && <div>規劃坪數 / {house_size}</div>} 
                       {build_floor      && <div>規劃樓層 / {build_floor}</div>}
                       {build_count      && <div>規劃戶車 / {build_count}</div>} 
                       {build_design     && <div>建築設計 / {build_design}</div>}

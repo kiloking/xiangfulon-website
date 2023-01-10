@@ -68,7 +68,7 @@ function WatchOldProject() {
             {data.title            && <div className='text-2xl text-[#003049] font-bold mb-4'>{data.title}</div> }
             {data.address          && <div>基地位置 / {data.address}</div>}
             {data.land_size        && <div>基地面積 / {data.land_size}</div>} 
-            {data.house_size       && <div>規劑坪數 / {data.house_size}</div>} 
+            {data.house_size       && <div>規劃坪數 / {data.house_size}</div>} 
             {data.build_floor      && <div>規劃樓層 / {data.build_floor}</div>}
             {data.build_count      && <div>規劃戶車 / {data.build_count}</div>} 
             {data.build_design     && <div>建築設計 / {data.build_design}</div>}
