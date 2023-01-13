@@ -12,7 +12,8 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_year:"2007"
+    open_year:"2007",
+    type:"old"
     
   },
   {
@@ -28,7 +29,8 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_year:"2009"
+    open_year:"2009",
+    type:"old"
   },
   {
     title:"集英堡一期",
@@ -43,7 +45,8 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_year:"2007"
+    open_year:"2007",
+    type:"old"
   },
   {
     title:"集英堡二期",
@@ -58,7 +61,8 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_year:"2008"
+    open_year:"2008",
+    type:"old"
   },
   {
     title:"集英堡三期",
@@ -73,7 +77,8 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_year:"2011"
+    open_year:"2011",
+    type:"old"
   },
   {
     title:"集英堡五期",
@@ -88,7 +93,8 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_year:"2013"
+    open_year:"2013",
+    type:"old"
   },
   {
     title:"集英堡六期",
@@ -103,7 +109,8 @@ export const oldProjects = [
     build_design:"巨仲建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"",
-    open_year:"2014"
+    open_year:"2014",
+    type:"old"
   },
   {
     title:"集英富琚",
@@ -119,6 +126,7 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
     open_year:"2022",
+    type:"hot",
     albums:[
       "08/p01.png",
       "08/p02.png",
@@ -136,19 +144,25 @@ export const oldProjects = [
     ]
   },
   {
-    title:"喜福匯No1",
-    project_code:"project09",
-    cover_image:"project09.png",
-    year_cover_image:"year_pro09.png",
-    address:"新北市蘆洲區長樂路166號",
-    land_size:"318.50坪",
-    house_size:"30.15-59.82坪",
-    build_floor:"12F+B2F",
-    build_count:"33戶+36車",
-    build_design:"吳非士建築師事務所",
-    build_create:"振城營造股份有限公司",
+    title:"喜福匯No3",
+    project_code:"project11",
+    cover_image:"project11.png",
+    year_cover_image:"year_pro11.png",
+    address:"新北市蘆洲區仁愛街90號",
+    land_size:"229.30坪",
+    house_size:"25.81-55.77坪",
+    build_floor:"10F+B2F",
+    build_count:"19戶+19車",
+    build_design:"陳朱平建築師事務所",
+    build_create:"全國營造股份有限公司",
     build_openspace:"映荷空間設計",
-    open_year:"2017"
+    open_year:"2017",
+    type:"hot",
+    albums:[
+      "11/p01.png",
+      "11/p02.png",
+      "11/p03.png"
+    ]
   },
   {
     title:"喜福匯No2",
@@ -163,27 +177,24 @@ export const oldProjects = [
     build_design:"吳非士建築師事務所",
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
-    open_year:"2017"
+    open_year:"2017",
+    type:"hot"
   },
   {
-    title:"喜福匯No3",
-    project_code:"project11",
-    cover_image:"project11.png",
-    year_cover_image:"year_pro11.png",
-    address:"新北市蘆洲區仁愛街90號",
-    land_size:"229.30坪",
-    house_size:"25.81-55.77坪",
-    build_floor:"10F+B2F",
-    build_count:"19戶+19車",
-    build_design:"陳朱平建築師事務所",
-    build_create:"全國營造股份有限公司",
+    title:"喜福匯No1",
+    project_code:"project09",
+    cover_image:"project09.png",
+    year_cover_image:"year_pro09.png",
+    address:"新北市蘆洲區長樂路166號",
+    land_size:"318.50坪",
+    house_size:"30.15-59.82坪",
+    build_floor:"12F+B2F",
+    build_count:"33戶+36車",
+    build_design:"吳非士建築師事務所",
+    build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
     open_year:"2017",
-    albums:[
-      "11/p01.png",
-      "11/p02.png",
-      "11/p03.png"
-    ]
+    type:"old"
   },
   {
     title:"喜福匯No5",
@@ -199,6 +210,7 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
     open_year:"2020",
+    type:"hot",
     albums:[
       "12/p01.png",
       "12/p02.png",
@@ -243,5 +255,14 @@ export const newProjects = [
     build_openspace:"",
     build_env:"",
     start_date:"110-10-27",    
+  }
+]
+
+export const hotProjects=[]
+export const urbanDevProjects=[
+  {
+    title:"敬請期待",
+    project_code:"project01",
+    cover_image:"project01.png",
   }
 ]

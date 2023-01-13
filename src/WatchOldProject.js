@@ -1,5 +1,5 @@
 import React,{useState,useEffect,useRef} from 'react'
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link,useNavigate } from 'react-router-dom';
 import {oldProjects} from './Components/WorkItems'
 import { FaArrowLeft } from "react-icons/fa";
 // Import Swiper React components
@@ -18,6 +18,7 @@ function WatchOldProject() {
   const [data ,setData] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0) 
   const currentEnv = 'development'
+  const navigate = useNavigate();
   // development  production
   const PUBLICURL = currentEnv === 'development' ?  process.env.PUBLIC_URL : '..'
 
@@ -57,7 +58,7 @@ function WatchOldProject() {
       style={{backgroundImage: `url(${PUBLICURL + '/images/blockbg.png' })`}}
     >
       <div className='px-10 pt-20 '>
-        <Link to="/work-1"><FaArrowLeft size="36px" color="black"/></Link>
+        <Link onClick={() => { navigate(-1); }}><FaArrowLeft size="36px" color="black"/></Link>
       </div>
       {data ?
         <div className='px-10 py-14 flex flex-col md:flex-row gap-6 '>

@@ -17,12 +17,12 @@ export const MenuItems01 = [
 ];
 export const MenuItems02 = [
   {
-    title: '典藏故事',
+    title: '歷年建案',
     path: '/work-1',
     cName: 'dropdown-link'
   },
   {
-    title: '歷年建案',
+    title: '熱銷建案',
     path: '/work-2',
     cName: 'dropdown-link'
   }
@@ -36,6 +36,11 @@ export const MenuItems03 = [
   {
     title: '未來計畫',
     path: '/news-2',
+    cName: 'dropdown-link'
+  },
+  {
+    title: '都市更新',
+    path: '/news-3',
     cName: 'dropdown-link'
   }
 ];
