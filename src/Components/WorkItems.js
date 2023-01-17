@@ -220,6 +220,25 @@ export const oldProjects = [
       "12/p06.png",
       "12/p07.png"
     ]
+  },
+  {
+    title:"蘆洲捷運站",
+    cover_image:"project13.png",
+    project_code:"project13",
+    images:['new_work02_1.png','new_work02_2.png'],
+    map_image:"new_work02_map.png",
+    address:"新北市蘆洲區三民路",
+    land_size:"492.80坪",
+    house_size:"25-39坪",
+    build_floor:"14F+B3F",
+    build_count:"58戶+72車",
+    build_design:"吳非士建築師事務所",
+    build_create:"全國營造股份有限公司",
+    build_openspace:"",
+    build_env:"",
+    start_date:"110-10-27",   
+    open_year:"2023", 
+    type:"hot",
   }
 ]
 
