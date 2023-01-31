@@ -222,7 +222,7 @@ export const oldProjects = [
     ]
   },
   {
-    title:"蘆洲捷運站",
+    title:"喜福匯No6",
     cover_image:"project13.png",
     project_code:"project13",
     images:['new_work02_1.png','new_work02_2.png'],
@@ -260,7 +260,7 @@ export const newProjects = [
     start_date:"111-10-25",    
   },
   {
-    title:"蘆洲捷運站",
+    title:"喜福匯No6",
     project_code:"new_work02",
     images:['new_work02_1.png','new_work02_2.png'],
     map_image:"new_work02_map.png",

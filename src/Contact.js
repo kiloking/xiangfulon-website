@@ -101,9 +101,9 @@ function Contact() {
         }}
         className=' relative md:absolute my-6  md:my-0 md:bottom-5 left-0 md:left-5 text-lg'>
           <div className='text-xl mb-5'>新北市三重區三德街36號</div>  
-          <div className='border-l-4 border-red-700 pl-4'>
-            <div>TEL 02-2857-9933</div> 
-            <div>FAX 02-2857-0033</div>
+          <div className='border-l-4 border-red-700 pl-4 text-left'>
+            <div>電話 02-2857-9933</div> 
+            <div>傳真 02-2857-0033</div>
           </div>
         </motion.div>
 
