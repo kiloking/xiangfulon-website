@@ -257,7 +257,7 @@ export const newProjects = [
     build_create:"全國營造股份有限公司",
     build_openspace:"澄統綠建築設計、境業設計工程公司(陳志宏建築師事務所)",
     build_env:"境業設計工程公司",
-    start_date:"111-10-25",    
+    start_date:"2022-10-25",    
   },
   {
     title:"喜福匯No6",
@@ -273,7 +273,7 @@ export const newProjects = [
     build_create:"全國營造股份有限公司",
     build_openspace:"",
     build_env:"",
-    start_date:"110-10-27",    
+    start_date:"2021-10-27",    
   }
 ]
 
