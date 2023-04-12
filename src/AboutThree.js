@@ -1,11 +1,16 @@
 import React from 'react'
 import MenuOne from './Components/MenuOne'
 import { motion } from "framer-motion";
+import { Helmet } from 'react-helmet';
 function AboutThree() {
   return (
     <div 
       className='w-full flex flex-col md:flex-row justify-between items-center'
     >
+      <Helmet>
+        <title>祥富龍實業/祥旭龍實業|建設公司|三蘆在地建商</title>
+        <meta name="description" content="【祥富龍實業/祥旭龍實業-三重蘆洲專業建商】深耕三重蘆洲地區，以品 質與信譽打造優質住宅。自土木營建基層打底深耕，我們傳承了對建築的愛，代代以 建築專業傳遞美好，不僅接棒對建築的熱忱，更將創造加倍宏遠達觀的未來。" />
+      </Helmet>
       <div 
         className='w-full md:w-1/2  md:h-screen  px-10 py-16 bg-center bg-no-repeat bg-cover'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/blockbg.png' })`}}

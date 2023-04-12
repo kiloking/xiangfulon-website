@@ -2,10 +2,15 @@ import React,{useState} from 'react'
 import SwiperBgImages from './Components/SwiperBgImages'
 import {homeBanner} from './HomeBannerItem'
 import { motion } from "framer-motion";
+import { Helmet } from 'react-helmet';
 function Home() {
 
   return (
     <div className='h-screen'>
+      <Helmet>
+        <title>祥富龍實業/祥旭龍實業|建設公司|三蘆在地建商</title>
+        <meta name="description" content="【祥富龍實業/祥旭龍實業-三重蘆洲專業建商】深耕三重蘆洲地區，以品 質與信譽打造優質住宅。自土木營建基層打底深耕，我們傳承了對建築的愛，代代以 建築專業傳遞美好，不僅接棒對建築的熱忱，更將創造加倍宏遠達觀的未來。" />
+      </Helmet>
       <div>
         <SwiperBgImages imgData={homeBanner}/>
       </div>

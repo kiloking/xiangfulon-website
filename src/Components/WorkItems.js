@@ -13,8 +13,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"",
     open_year:"2007",
-    type:"old"
-    
+    type:"old",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"城市遠見",
@@ -30,7 +31,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"",
     open_year:"2009",
-    type:"old"
+    type:"old",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"集英堡一期",
@@ -46,7 +49,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"",
     open_year:"2007",
-    type:"old"
+    type:"old",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"集英堡二期",
@@ -62,7 +67,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"",
     open_year:"2008",
-    type:"old"
+    type:"old",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"集英堡三期",
@@ -78,7 +85,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"",
     open_year:"2011",
-    type:"old"
+    type:"old",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"集英堡五期",
@@ -94,7 +103,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"",
     open_year:"2013",
-    type:"old"
+    type:"old",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"集英堡六期",
@@ -110,7 +121,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"",
     open_year:"2014",
-    type:"old"
+    type:"old",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"集英富琚",
@@ -141,7 +154,9 @@ export const oldProjects = [
       "08/p11.png",
       "08/p12.png",
       "08/p13.png",
-    ]
+    ],
+    meta_tite:"【新北市三重區建案】集英富琚:吳非士設計，振城營造打造，景觀生活 享受 - 三重區建案集英富琚|祥富龍實業/祥旭龍實業|新北市三重區新建案 2022年 矚目推出",
+    meta_description:"【集英富琚】位於新北市三重區集賢路189號，這個獨特的建案擁有478.3 3坪基地面積，提供34-48坪的精緻住宅。該建案共規劃13層樓高，附帶4層地下室， 共有52戶住宅單位和56個停車位。由著名的吳非士建築師事務所設計，並由振城營造 股份有限公司施工建造。集英富琚的公共空間由映荷空間設計操刀，結合時尚與實 用。該建案於2022年推出，成為三重區的矚目新寵。探索集英富琚，感受品質生活的 魅力。"
   },
   {
     title:"喜福匯No3",
@@ -162,7 +177,9 @@ export const oldProjects = [
       "11/p01.png",
       "11/p02.png",
       "11/p03.png"
-    ]
+    ],
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"喜福匯No2",
@@ -178,7 +195,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
     open_year:"2017",
-    type:"hot"
+    type:"hot",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"喜福匯No1",
@@ -194,7 +213,9 @@ export const oldProjects = [
     build_create:"振城營造股份有限公司",
     build_openspace:"映荷空間設計",
     open_year:"2017",
-    type:"old"
+    type:"old",
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"喜福匯No5",
@@ -219,7 +240,9 @@ export const oldProjects = [
       "12/p05.png",
       "12/p06.png",
       "12/p07.png"
-    ]
+    ],
+    meta_tite:"",
+    meta_description:""
   },
   {
     title:"喜福匯No6",
@@ -239,6 +262,8 @@ export const oldProjects = [
     start_date:"110-10-27",   
     open_year:"2023", 
     type:"hot",
+    meta_tite:"蘆洲三民路喜福匯No6全新建案|祥富龍實業/祥旭龍實業|新北市蘆洲區 新建案 2023年矚目推出",
+    meta_description:"喜福匯No6 - 蘆洲區三民路優質新建案，擁有絕佳地理位置、精緻建築設 計及完善交通，位於新北市蘆洲區三民路的喜福匯No6新建案，提供您在都會區中的 綠意居所。基地面積492.80坪，規劃有25-39坪不等的精緻戶型，共14樓及地下3層。 喜福匯No6提供58戶住宅單位及72個停車位，可滿足居住者的不同需求。由吳非士建 築師事務所設計，全國營造股份有限公司擔任施工營造，保證品質與安全。喜福匯No 6於2023年推出，是蘆洲區最新的優質建案。"
   }
 ]
 
@@ -257,7 +282,9 @@ export const newProjects = [
     build_create:"全國營造股份有限公司",
     build_openspace:"澄統綠建築設計、境業設計工程公司(陳志宏建築師事務所)",
     build_env:"境業設計工程公司",
-    start_date:"2022-10-25",    
+    start_date:"2022-10-25",
+    meta_tite:"",
+    meta_description:""    
   },
   {
     title:"喜福匯No6",
@@ -273,7 +300,9 @@ export const newProjects = [
     build_create:"全國營造股份有限公司",
     build_openspace:"",
     build_env:"",
-    start_date:"2021-10-27",    
+    start_date:"2021-10-27",
+    meta_tite:"",
+    meta_description:""  
   }
 ]
 

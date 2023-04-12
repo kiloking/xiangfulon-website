@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 // import required modules
 import { Autoplay,FreeMode, Navigation, Thumbs } from "swiper";
-
+import { Helmet } from 'react-helmet';
 function WatchOldProject() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const {projectid} = useParams()
@@ -56,7 +56,19 @@ function WatchOldProject() {
   return (
     <div className='w-full min-h-screen bg-cover bg-center bg-no-repeat '
       style={{backgroundImage: `url(${PUBLICURL + '/images/blockbg.png' })`}}
-    >
+    > 
+      {
+        data ? 
+        <Helmet>
+          <title>{data.meta_tite.length > 0 ? data.meta_tite : "祥富龍實業/祥旭龍實業"}</title>
+          <meta name="description" content={data.meta_description.length > 0 ? data.meta_description :"自土木營建基層打底深耕，我們傳承了對建築的愛，代代以建築專業傳遞美 好，不僅接棒對建築的熱忱，更將創造加倍宏遠達觀的未來。"} />
+        </Helmet>
+        :
+        <Helmet>
+          <title>祥富龍實業/祥旭龍實業</title>
+          <meta name="description" content="自土木營建基層打底深耕，我們傳承了對建築的愛，代代以建築專業傳遞美 好，不僅接棒對建築的熱忱，更將創造加倍宏遠達觀的未來。" />
+        </Helmet>
+      }
       <div className='px-10 pt-20 '>
         <Link onClick={() => { navigate(-1); }}><FaArrowLeft size="36px" color="black"/></Link>
       </div>
