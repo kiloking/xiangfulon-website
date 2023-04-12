@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { useParams, Link } from 'react-router-dom';
 import {news} from './Components/NewsItems'
 import { FaArrowLeft } from "react-icons/fa";
+import { Helmet } from 'react-helmet';
 function WatchArticle() {
   const {articleid} = useParams()
   const [data ,setData] = useState(null)
@@ -19,6 +20,12 @@ function WatchArticle() {
     <div className='w-full h-screen bg-cover bg-center bg-no-repeat '
       style={{backgroundImage: `url(${PUBLICURL+'/images/blockbg.png'})`}}
     >
+      <Helmet>
+        <title>祥富龍實業/祥旭龍實業|建設公司|三蘆在地建商</title>
+        <meta name="description" content="【祥富龍實業/祥旭龍實業-三重蘆洲專業建商】深耕三重蘆洲地區，以品 質與信譽打造優質住宅。自土木營建基層打底深耕，我們傳承了對建築的愛，代代以 建築專業傳遞美好，不僅接棒對建築的熱忱，更將創造加倍宏遠達觀的未來。" />
+        <meta property="og:title" content="祥富龍實業/祥旭龍實業|建設公司|三蘆在地建商" />
+        <meta property="og:description" content="【祥富龍實業/祥旭龍實業-三重蘆洲專業建商】深耕三重蘆洲地區，以品 質與信譽打造優質住宅。自土木營建基層打底深耕，我們傳承了對建築的愛，代代以 建築專業傳遞美好，不僅接棒對建築的熱忱，更將創造加倍宏遠達觀的未來。" />
+      </Helmet>
       <div className='px-10 pt-20 '>
         <Link to="/news-2"><FaArrowLeft size="36px" color="black"/></Link>
       </div>
